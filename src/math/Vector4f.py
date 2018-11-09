@@ -19,7 +19,10 @@ class Vector4f:
         x2:float = c.x - self.x
         y2:float = c.y - self.y
 
-        return (x1 * y2 - x2 * y1)/2
+        return (x1 * y2 - x2 * y1)
+
+    def perspectiveDivide(self):
+        return Vector4f(self.x / self.w, self.y / self.w, self.z / self.w, self.w)
 
     @classmethod
     def normalize(vecRight):

@@ -39,4 +39,5 @@ class Matrix4f:
         self.mat[1][3] = hh
 
         self.mat[2][2] =  1
-        self.mat[3][3] =  1
+        self.mat[3][2] = -1
+        self.mat[3][3] =  0

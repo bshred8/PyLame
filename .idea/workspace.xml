@@ -2,51 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67fd69a4-3454-4d09-9602-a71e692dcdda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/audio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/blendmode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/clipboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/cpuinfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/dll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/endian.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/error.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/filesystem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/gamecontroller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/gesture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/haptic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/hints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/joystick.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/keyboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/keycode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/loadso.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/log.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/messagebox.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/mouse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/pixels.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/platform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/power.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/rect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/render.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/rwops.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/scancode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/sdlgfx.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/sdlimage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/sdlmixer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/sdlttf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/shape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/stdinc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/surface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/syswm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/timer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/touch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/version.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sdl2/video.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Display.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scanner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Matrix4f.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/math/Vector4f.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Matrix4f.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Matrix4f.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/Vector4f.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Vector4f.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,23 +25,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="22" />
+          <entry key="py" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="22" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="28" />
-          <entry key="py" value="15105" />
+          <entry key="py" value="15690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="15133" />
+          <entry key="Python" value="15718" />
         </counts>
       </usages-collector>
     </session>
@@ -92,12 +51,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Scanner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="510">
+              <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1541768475832" expanded="true" signature="116:117" ph="..." />
-                <marker date="1541768475832" expanded="true" signature="2484:2590" ph="..." />
+                <marker date="1541799132206" expanded="true" signature="116:117" ph="..." />
+                <marker date="1541799132206" expanded="true" signature="2565:2666" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,11 +81,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Vector4f.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="600">
+              <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
               <folding>
-                <marker date="1541736082857" expanded="true" signature="35:36" ph="..." />
-                <marker date="1541736082857" expanded="true" signature="249:456" ph="..." />
+                <marker date="1541797991422" expanded="true" signature="35:36" ph="..." />
+                <marker date="1541797991422" expanded="true" signature="249:571" ph="..." />
+                <marker date="1541797991422" expanded="true" signature="482:571" ph="..." />
               </folding>
             </state>
           </provider>
@@ -135,12 +95,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/math/Matrix4f.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-365">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="175">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding>
-                <marker date="1541735714034" expanded="true" signature="39:44" ph="..." />
-                <marker date="1541735714034" expanded="true" signature="305:861" ph="..." />
-                <marker date="1541735714034" expanded="true" signature="897:1131" ph="..." />
+                <marker date="1541799051505" expanded="true" signature="39:44" ph="..." />
+                <marker date="1541799051505" expanded="true" signature="305:861" ph="..." />
+                <marker date="1541799051505" expanded="true" signature="855:861" ph="..." />
+                <marker date="1541799051505" expanded="true" signature="897:1131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -171,8 +132,8 @@
         <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/lib/sdl2/surface.py" />
         <option value="$PROJECT_DIR$/src/Display.py" />
-        <option value="$PROJECT_DIR$/src/math/Matrix4f.py" />
         <option value="$PROJECT_DIR$/src/math/Vector4f.py" />
+        <option value="$PROJECT_DIR$/src/math/Matrix4f.py" />
         <option value="$PROJECT_DIR$/src/Scanner.py" />
       </list>
     </option>
@@ -404,13 +365,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/__init__.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/218806272/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3197" column="8" selection-start-line="3197" selection-start-column="8" selection-end-line="3197" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Display.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="683">
@@ -425,37 +379,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Matrix4f.py">
+    <entry file="file://$PROJECT_DIR$/src/math/Vector4f.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-365">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="600">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
           <folding>
-            <marker date="1541735714034" expanded="true" signature="39:44" ph="..." />
-            <marker date="1541735714034" expanded="true" signature="305:861" ph="..." />
-            <marker date="1541735714034" expanded="true" signature="897:1131" ph="..." />
+            <marker date="1541797991422" expanded="true" signature="35:36" ph="..." />
+            <marker date="1541797991422" expanded="true" signature="249:571" ph="..." />
+            <marker date="1541797991422" expanded="true" signature="482:571" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Vector4f.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/218806272/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="462">
+          <caret line="3750" column="8" selection-start-line="3750" selection-start-column="8" selection-end-line="3750" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Matrix4f.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
           <folding>
-            <marker date="1541736082857" expanded="true" signature="35:36" ph="..." />
-            <marker date="1541736082857" expanded="true" signature="249:456" ph="..." />
+            <marker date="1541799051505" expanded="true" signature="39:44" ph="..." />
+            <marker date="1541799051505" expanded="true" signature="305:861" ph="..." />
+            <marker date="1541799051505" expanded="true" signature="855:861" ph="..." />
+            <marker date="1541799051505" expanded="true" signature="897:1131" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Scanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="510">
+          <caret line="78" column="46" selection-start-line="78" selection-start-column="46" selection-end-line="78" selection-end-column="46" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1541768475832" expanded="true" signature="116:117" ph="..." />
-            <marker date="1541768475832" expanded="true" signature="2484:2590" ph="..." />
+            <marker date="1541799132206" expanded="true" signature="116:117" ph="..." />
+            <marker date="1541799132206" expanded="true" signature="2565:2666" ph="..." />
           </folding>
         </state>
       </provider>
