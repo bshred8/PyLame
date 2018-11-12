@@ -1,5 +1,3 @@
-from math import *
-
 class Vector4f:
 
     x:float = None
@@ -24,17 +22,15 @@ class Vector4f:
     def perspectiveDivide(self):
         return Vector4f(self.x / self.w, self.y / self.w, self.z / self.w, self.w)
 
-    @classmethod
-    def normalize(vecRight):
-        length:float = float((vecRight.x * vecRight.x) + (vecRight.y * vecRight.y) + (vecRight.z * vecRight.z))
-        vecRight.x /= length
-        vecRight.y /= length
-        vecRight.z /= length
-        vecRight.w = 0
-        return vecRight
+    def normalize(self):
+        length:float = float((self.x * self.x) + (self.y * self.y) + (self.z * self.z))
+        self.x /= length
+        self.y /= length
+        self.z /= length
+        self.w = 0
+        return self
 
-    @staticmethod
-    def cross(vecLeft, vecRight):
+    def cross(self, vecLeft, vecRight):
         nx:float = vecLeft.y * vecRight.z - vecRight.y * vecLeft.z
         ny:float = vecLeft.x * vecRight.z - vecRight.x * vecLeft.z
         nz:float = vecLeft.y * vecRight.x - vecRight.y * vecLeft.x

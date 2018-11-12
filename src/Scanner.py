@@ -1,8 +1,7 @@
 from Display import Screen
 from lib.sdl2 import Uint8
-from Vector4f import *
 from Matrix4f import *
-
+from Texture import *
 
 class Scanner:
 
@@ -43,8 +42,44 @@ class Scanner:
         self.scanConvertLine(x2, y2, x3, y3, 1 - hand)
         self.scanConvertLine(x1, y1, x2, y2, 1 - hand)
 
-    def renderTriangle(self, minYVert:Vector4f, midYVert:Vector4f, maxYVert:Vector4f):
+    def renderTexturedTriangle(self, tex:Texture, minYVert:Vector4f, midYVert:Vector4f, maxYVert:Vector4f):
+        screenSpace = Matrix4f()
+        screenSpace.screenSpaceTransform(self.width, self.height)
+        minYTar = screenSpace.multiply(minYVert).perspectiveDivide()
+        midYTar = screenSpace.multiply(midYVert).perspectiveDivide()
+        maxYTar = screenSpace.multiply(maxYVert).perspectiveDivide()
 
+        # Swapping vertices
+        if maxYTar.y < midYTar.y:
+            temp = maxYTar
+            maxYTar = midYTar
+            midYTar = temp
+        if midYTar.y < minYTar.y:
+            temp = midYTar
+            midYTar = minYTar
+            minYTar = temp
+        if maxYTar.y < midYTar.y:
+            temp = maxYTar
+            maxYTar = midYTar
+            midYTar = temp
+
+        xRatio:float = tex.width / self.width
+        yRatio:float = tex.height / self.height
+
+        hand:int = 0
+        if (minYTar.triangleArea(maxYTar, midYTar)) >= 0:
+            hand = 1
+        self.scanConvertTriangle(int(minYTar.x), int(minYTar.y), int(midYTar.x), int(midYTar.y), int(maxYTar.x),
+                                 int(maxYTar.y), hand)
+        for y in range(int(minYTar.y), int(maxYTar.y)):
+            xStart = self.scanBuffer[y * 2 + 0]
+            xStop  = self.scanBuffer[y * 2 + 1]
+            for x in range(xStart, xStop):
+                colorTuple = tex.getPixel(int((x * xRatio)), int((y * yRatio)))
+                self.sc.setColor(Uint8(255), colorTuple[0], colorTuple[1], colorTuple[2])
+                self.sc.setPixel(x, y)
+
+    def renderTriangle(self, minYVert:Vector4f, midYVert:Vector4f, maxYVert:Vector4f):
         screenSpace = Matrix4f()
         screenSpace.screenSpaceTransform(self.width, self.height)
         minYTar = screenSpace.multiply(minYVert).perspectiveDivide()
@@ -68,14 +103,28 @@ class Scanner:
         hand:int = 0
         if (minYTar.triangleArea(maxYTar, midYTar)) >= 0:
             hand = 1
-        self.scanConvertTriangle(int(minYTar.x), int(minYTar.y), int(midYTar.x), int(midYTar.y), int(maxYTar.x), int(maxYTar.y), hand)
+        self.scanConvertTriangle(int(minYTar.x), int(minYTar.y), int(midYTar.x), int(midYTar.y), int(maxYTar.x),
+                                 int(maxYTar.y), hand)
         self.drawScanBuffer(int(minYTar.y), int(maxYTar.y))
 
-screen = Screen()
-scanner = Scanner(screen)
 
-def render():
-    screen.setColor(Uint8(255), Uint8(255), Uint8(128), Uint8(64))
-    scanner.renderTriangle(Vector4f(-1, -1, -1, 1), Vector4f(1, 1, -1, 1), Vector4f(1, -1, -1, 1))
+class Test:
+    screen = Screen()
+    scanner = Scanner(screen)
+    tex = Texture("C:\\Users\\theho\\Desktop\\test.png")
 
-screen.loop(render, screen.defaultUpdate)
+    def renderTriangle(self):
+        self.screen.setColor(255, 255, 255, 255)
+        self.screen.clear()
+        self.scanner.renderTexturedTriangle(self.tex, Vector4f(-0.5, -0.5, -1, 1), Vector4f(0, 0.5, -1, 1),
+                                            Vector4f(0.5, -0.5, -1, 1))
+
+    def render(self):
+        pass
+
+    def loop(self):
+        self.screen.loop(self.render, self.screen.defaultUpdate)
+
+t = Test()
+t.renderTriangle()
+t.loop()

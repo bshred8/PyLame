@@ -55,6 +55,8 @@ class Screen(Display):
         SDL_RenderClear(self.rend)
 
     def setPixel(self, x:int, y:int):
+        if x < 0 or x > self.width or y < 0 or y > self.height:
+            return
         SDL_RenderDrawPoint(self.rend, x, y)
 
     def renderLine(self, x1:int, y1:int, x2:int, y2:int):
